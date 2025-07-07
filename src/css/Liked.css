@@ -1,0 +1,58 @@
+.favorites { 
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--primary-background); 
+  color: var(--text-color-primary); 
+  min-height: calc(100vh - 70px); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.favorites h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--accent-color); /* Use variable for main heading */
+  text-shadow: 2px 2px 4px var(--box-shadow-color); 
+}
+
+.favorites-empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: var(--secondary-background); 
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 600px;
+  box-shadow: 0 4px 10px var(--box-shadow-color);
+}
+
+.favorites-empty h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--accent-color); 
+}
+
+.favorites-empty p {
+  color: var(--text-color-secondary); 
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Animation for new favorites being added */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.movies-grid > * { 
+  animation: fadeIn 0.3s ease-out forwards;
+}
