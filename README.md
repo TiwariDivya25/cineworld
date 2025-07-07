@@ -18,4 +18,5 @@ CineWorld is a modern, responsive web application built with React that allows u
 * **The Movie Database (TMDb) API:** Provides comprehensive and up-to-date movie data.
 * **CSS:** For all styling, meticulously crafted to achieve an attractive, responsive, and theme-switchable layout.
 
-## View Live @ thiscineworld.netlify.app/
+## View Live 
+thiscineworld.netlify.app/
